@@ -327,6 +327,7 @@ function _update!(p::PPOPolicy, t::Any)
 
             p.norm[i, epoch] = clip_by_global_norm!(gs, ps, p.max_grad_norm)
             update!(AC, gs)
+            print("THS MANA SOU TO MOUNI")
         end
     end
 end
